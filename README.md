@@ -24,8 +24,7 @@
 ### 💖 Leon
 - **Role:** Soft Alpha
 - **Dedication:** Cares deeply about the 'Big Black Buffed Alphas'
-- **Value:** Team glue and heart
 
 ---
 
-*Together, we bring passion, dedication, and humor to every project.*
+*Together, we bring dih, monkey town phonk, and sucuk to every project.*
