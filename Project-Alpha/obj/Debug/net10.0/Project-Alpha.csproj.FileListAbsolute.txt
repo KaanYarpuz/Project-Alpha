@@ -13,3 +13,11 @@
 /Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/obj/Debug/net10.0/Project-Alpha.pdb
 /Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/obj/Debug/net10.0/Project-Alpha.genruntimeconfig.cache
 /Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/obj/Debug/net10.0/ref/Project-Alpha.dll
+C:\Users\leonv\OneDrive - Hogeschool Rotterdam\HR2025-2026\Semester2\Project-Alpha\Project-Alpha\obj\Debug\net10.0\Project-Alpha.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leonv\OneDrive - Hogeschool Rotterdam\HR2025-2026\Semester2\Project-Alpha\Project-Alpha\obj\Debug\net10.0\Project-Alpha.AssemblyInfoInputs.cache
+C:\Users\leonv\OneDrive - Hogeschool Rotterdam\HR2025-2026\Semester2\Project-Alpha\Project-Alpha\obj\Debug\net10.0\Project-Alpha.AssemblyInfo.cs
+C:\Users\leonv\OneDrive - Hogeschool Rotterdam\HR2025-2026\Semester2\Project-Alpha\Project-Alpha\obj\Debug\net10.0\Project-Alpha.csproj.CoreCompileInputs.cache
+C:\Users\leonv\OneDrive - Hogeschool Rotterdam\HR2025-2026\Semester2\Project-Alpha\Project-Alpha\obj\Debug\net10.0\Project-Alpha.sourcelink.json
+C:\Users\leonv\OneDrive - Hogeschool Rotterdam\HR2025-2026\Semester2\Project-Alpha\Project-Alpha\obj\Debug\net10.0\Project-Alpha.dll
+C:\Users\leonv\OneDrive - Hogeschool Rotterdam\HR2025-2026\Semester2\Project-Alpha\Project-Alpha\obj\Debug\net10.0\refint\Project-Alpha.dll
+C:\Users\leonv\OneDrive - Hogeschool Rotterdam\HR2025-2026\Semester2\Project-Alpha\Project-Alpha\obj\Debug\net10.0\Project-Alpha.pdb

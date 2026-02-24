@@ -2,7 +2,7 @@ class Monster
 {
     // fields
     int ID;
-    string name;
+    string Name;
     int Attack;
     int Health;
 
@@ -10,7 +10,7 @@ class Monster
     public Monster (int C_id, string C_Name, int C_Attack, int C_Health)
     {
         this.ID = C_id;
-        this.name = C_Name;
+        this.Name = C_Name;
         this.Attack = C_Attack;
         this.Health = C_Health;
     }
