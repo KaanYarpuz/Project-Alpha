@@ -74,7 +74,6 @@ public static class World
 
         while (!gameWin)
         {
-            while (!(input))
             Console.WriteLine("What would you like to do? (Enter a number)?");
             Console.WriteLine("1: See game stats");
             Console.WriteLine("2: Move");
