@@ -25,7 +25,7 @@ namespace Project_Alpha
                 Console.WriteLine("1: See game stats");
                 Console.WriteLine("2: Move");
                 Console.WriteLine("3: Fight");
-                Console.WriteLine("3: Quit");
+                Console.WriteLine("4: Quit");
 
                 option = Convert.ToInt32(Console.ReadLine());
 
@@ -33,6 +33,15 @@ namespace Project_Alpha
                 {
                     // Game stats
                 }
+                else if (option == 2)
+                {
+                    // Move
+                }
+                else if (option == 3)
+                {
+                    // Fight
+                }
+                else if (option == 4) {Gamewin = true;}
 
             }
         }
