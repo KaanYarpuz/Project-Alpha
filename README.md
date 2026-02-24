@@ -11,6 +11,7 @@
 - **2:** Yearns for 'Broodje sucuk'
 - **3:** Master of the scrummers     *scrums EVERYBODY firmly from head to toe!*
 - **4:** Father figure for the 'Bug buffed Alphas'
+- **5:** Needs mental help after Basecamp due to a certain being.
 
 ### 😤 Ruben
 - **1:** Angry, devastating Beta
