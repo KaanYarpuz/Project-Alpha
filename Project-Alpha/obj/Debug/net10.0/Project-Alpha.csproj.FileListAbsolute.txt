@@ -1,0 +1,15 @@
+/Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/obj/Debug/net10.0/Project-Alpha.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/obj/Debug/net10.0/Project-Alpha.AssemblyInfoInputs.cache
+/Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/obj/Debug/net10.0/Project-Alpha.AssemblyInfo.cs
+/Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/obj/Debug/net10.0/Project-Alpha.csproj.CoreCompileInputs.cache
+/Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/obj/Debug/net10.0/Project-Alpha.sourcelink.json
+/Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/bin/Debug/net10.0/Project-Alpha
+/Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/bin/Debug/net10.0/Project-Alpha.deps.json
+/Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/bin/Debug/net10.0/Project-Alpha.runtimeconfig.json
+/Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/bin/Debug/net10.0/Project-Alpha.dll
+/Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/bin/Debug/net10.0/Project-Alpha.pdb
+/Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/obj/Debug/net10.0/Project-Alpha.dll
+/Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/obj/Debug/net10.0/refint/Project-Alpha.dll
+/Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/obj/Debug/net10.0/Project-Alpha.pdb
+/Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/obj/Debug/net10.0/Project-Alpha.genruntimeconfig.cache
+/Users/kaanyarpuz/Desktop/Project-Alpha/Project-Alpha/obj/Debug/net10.0/ref/Project-Alpha.dll

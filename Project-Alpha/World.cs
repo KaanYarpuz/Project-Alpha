@@ -1,3 +1,9 @@
+using System;
+using System.Collections.Generic;
+
+namespace Project_Alpha
+{
+
 public static class World
 {
 
@@ -37,39 +43,7 @@ public static class World
         PopulateQuests();
         PopulateLocations();
 
-        while (!gameWin)
-        {
-            Console.WriteLine("What would you like to do? (Enter a number)?");
-            Console.WriteLine("1: See game stats");
-            Console.WriteLine("2: Move");
-            Console.WriteLine("3: Fight");
-            Console.WriteLine("4: Quit");
-
-            int input = Convert.ToInt32(Console.ReadLine());
-
-        }
-
     }
-
-    class Location
-    {
-        
-    } 
-
-    class Monster
-    {
-        
-    } 
-
-    class Weapon
-    {
-        
-    } 
-
-    class Quest
-    {
-        
-    } 
 
 
     public static void PopulateWeapons()
@@ -241,4 +215,5 @@ public static class World
 
         return null;
     }
+}
 }
