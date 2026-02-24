@@ -35,7 +35,9 @@ namespace Project_Alpha
                 if (option == 1)
                 {
                     // Game stats
+                    Console.WriteLine($"-------------\nHealth: {player.Health}");
                     player.Show_inv();
+                    Console.WriteLine($"-------------");
                 }
                 else if (option == 2)
                 {
