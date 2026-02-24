@@ -6,6 +6,9 @@ namespace Project_Alpha
         {
             Console.WriteLine("Game starting...");
 
+            Player player = new Player(10);
+            player.inventory.Add(World.Weapons[0]);
+
             var locations = World.Locations;
 
             foreach (var location in locations)
@@ -32,6 +35,7 @@ namespace Project_Alpha
                 if (option == 1)
                 {
                     // Game stats
+                    player.Show_inv();
                 }
                 else if (option == 2)
                 {
