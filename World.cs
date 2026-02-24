@@ -1,3 +1,22 @@
+    class Location
+    {
+        
+    } 
+
+    class Monster
+    {
+        
+    } 
+
+    class Weapon
+    {
+        
+    } 
+
+    class Quest
+    {
+        
+    } 
 public static class World
 {
 
@@ -51,25 +70,7 @@ public static class World
 
     }
 
-    class Location
-    {
-        
-    } 
 
-    class Monster
-    {
-        
-    } 
-
-    class Weapon
-    {
-        
-    } 
-
-    class Quest
-    {
-        
-    } 
 
 
     public static void PopulateWeapons()
