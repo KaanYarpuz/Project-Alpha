@@ -14,12 +14,12 @@
 ### 😤 Ruben
 - **1:** Angry, devastating Beta
 - **2:** Listens to Monkey Town Phonk
-- **3:** Intense and focused
+- **3:** Gets very mad when scrummed  *does not like to be scrummed*
 
 ### 💪 Tunahan
 - **1:** Big buffed Alpha
 - **2:** Doesn't listen to weak Monkey Town Phonk
-- **3:** Peak performance
+- **3:** Unc
 
 ### 💖 Leon
 - **1:** Soft Alpha
