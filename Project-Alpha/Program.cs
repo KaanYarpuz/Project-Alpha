@@ -7,19 +7,34 @@ namespace Project_Alpha
             Console.WriteLine("Game starting...");
 
             var locations = World.Locations;
-            List<Monster> Monsters = World.Monsters;
 
             foreach (var location in locations)
             {
                 Console.WriteLine($"Location: {location.Name}");
             }
 
-            foreach (Monster monster in Monsters)
-            {
-                Console.WriteLine($"monster: {monster.Name}");
-            }
-            
+
             Console.WriteLine("World initialized.");
+
+            bool Gamewin = false;
+            int option = 0;
+
+            while (!Gamewin)
+            {
+                Console.WriteLine("Choose something batty boy: ");
+                Console.WriteLine("1: See game stats");
+                Console.WriteLine("2: Move");
+                Console.WriteLine("3: Fight");
+                Console.WriteLine("3: Quit");
+
+                option = Convert.ToInt32(Console.WriteLine());
+
+                if (option == 1)
+                {
+                    // Game stats
+                }
+
+            }
         }
     }
 }

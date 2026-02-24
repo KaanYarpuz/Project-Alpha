@@ -7,7 +7,7 @@ namespace Project_Alpha
         public string Description { get; }
 
         public Quest? QuestAvailableHere { get; set; }
-        public Monster? MonsterLivingHere { get; set; }
+        public Monster MonsterLivingHere { get; set; }
 
         public Location? LocationToNorth { get; set; }
         public Location? LocationToSouth { get; set; }
@@ -18,7 +18,7 @@ namespace Project_Alpha
                         string name,
                         string description,
                         Quest? questAvailableHere,
-                        Monster? monsterLivingHere)
+                        Monster monsterLivingHere)
         {
             ID = id;
             Name = name;
