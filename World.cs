@@ -28,13 +28,48 @@ public static class World
     public const int LOCATION_ID_BRIDGE = 8;
     public const int LOCATION_ID_SPIDER_FIELD = 9;
 
+    public static bool gameWin = false;
+
     static World()
     {
         PopulateWeapons();
         PopulateMonsters();
         PopulateQuests();
         PopulateLocations();
+
+        while (!gameWin)
+        {
+            Console.WriteLine("What would you like to do? (Enter a number)?");
+            Console.WriteLine("1: See game stats");
+            Console.WriteLine("2: Move");
+            Console.WriteLine("3: Fight");
+            Console.WriteLine("4: Quit");
+
+            int input = Convert.ToInt32(Console.ReadLine());
+
+        }
+
     }
+
+    class Location
+    {
+        
+    } 
+
+    class Monster
+    {
+        
+    } 
+
+    class Weapon
+    {
+        
+    } 
+
+    class Quest
+    {
+        
+    } 
 
 
     public static void PopulateWeapons()
