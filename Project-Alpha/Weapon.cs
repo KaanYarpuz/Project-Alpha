@@ -7,7 +7,7 @@ namespace Project_Alpha{
         public string Name;
         public int Damage;
 
-        public Weapon(int id, string name, int Damage)
+        public Weapon(int id, string name, int damage)
         {
             ID = id;
             Name = name;
