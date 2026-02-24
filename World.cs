@@ -70,16 +70,37 @@ public static class World
         PopulateQuests();
         PopulateLocations();
 
+        int input = 0;
+
         while (!gameWin)
         {
+            while (!(input))
             Console.WriteLine("What would you like to do? (Enter a number)?");
             Console.WriteLine("1: See game stats");
             Console.WriteLine("2: Move");
             Console.WriteLine("3: Fight");
             Console.WriteLine("4: Quit");
 
-            int input = Convert.ToInt32(Console.ReadLine());
+            input = Convert.ToInt32(Console.ReadLine());
 
+            if (input == 1)
+            {
+                // see game stats
+            }
+            else if (input == 2)
+            {
+                // Move
+            }
+            else if (input == 3)
+            {
+                // Fight
+            }
+            else if (input == 4)
+            {
+                // quit
+                gameWin = true;
+            }
+            else {Console.WriteLine("wrong input");}
         }
 
     }
