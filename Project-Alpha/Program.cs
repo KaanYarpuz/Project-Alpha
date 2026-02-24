@@ -27,7 +27,7 @@ namespace Project_Alpha
                 Console.WriteLine("3: Fight");
                 Console.WriteLine("3: Quit");
 
-                option = Convert.ToInt32(Console.WriteLine());
+                option = Convert.ToInt32(Console.ReadLine());
 
                 if (option == 1)
                 {
