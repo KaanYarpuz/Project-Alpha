@@ -1,30 +1,30 @@
 # 🔥 Project Big Black Buffed Alphas
 
-> *A legendary team working together*
+> *We are the most tuff alphas oat!!!*
 
 ---
 
 ## 👥 Meet the Team
 
 ### 🐺 Kaan
-- **Role:** Passive-aggressive Omega
-- **Passion:** Yearns for 'Broodje sucuk'
-- **Specialty:** Master of the scrummers, scrums EVERYBODY firmly from head to toe
+- **1:** Passive-aggressive Omega
+- **2:** Yearns for 'Broodje sucuk'
+- **3:** Master of the scrummers, scrums EVERYBODY firmly from head to toe
 
 ### 😤 Ruben
-- **Role:** Angry, devastating Beta
-- **Vibe:** Listens to Monkey Town Phonk
-- **Energy:** Intense and focused
+- **1:** Angry, devastating Beta
+- **2:** Listens to Monkey Town Phonk
+- **3:** Intense and focused
 
 ### 💪 Tunahan
-- **Role:** Big buffed Alpha
-- **Preferences:** Doesn't listen to weak Monkey Town Phonk
-- **Strength:** Peak performance
+- **1:** Big buffed Alpha
+- **2:** Doesn't listen to weak Monkey Town Phonk
+- **3:** Peak performance
 
 ### 💖 Leon
-- **Role:** Soft Alpha
-- **Dedication:** Cares deeply about the 'Big Black Buffed Alphas'
-
+- **1:** Soft Alpha
+- **2:** Cares deeply about the 'Big Black Buffed Alphas'
+- **3:** Eats 'broodje Sucuk' with cheese
 ---
 
 *Together, we bring dih, monkey town phonk, and sucuk to every project.*
