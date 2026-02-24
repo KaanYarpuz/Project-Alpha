@@ -9,13 +9,13 @@
 ### 🐺 Kaan
 - **1:** Passive-aggressive Omega
 - **2:** Yearns for 'Broodje sucuk'
-- **3:** Master of the scrummers *scrums EVERYBODY firmly from head to toe!*
+- **3:** Master of the scrummers     *scrums EVERYBODY firmly from head to toe!*
 - **4:** Father figure for the 'Bug buffed Alphas'
 
 ### 😤 Ruben
 - **1:** Angry, devastating Beta
 - **2:** Listens to Monkey Town Phonk
-- **3:** Gets very mad when scrummed  *does not like to be scrummed*
+- **3:** Gets very mad when scrummed    *does not like to be scrummed*
 
 ### 💪 Tunahan
 - **1:** Big buffed Alpha
