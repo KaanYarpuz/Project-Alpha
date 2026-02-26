@@ -124,23 +124,24 @@ public static class World
         if (QUEST_ID_CLEAR_ALCHEMIST_GARDEN == id) {Console.WriteLine($"Do you want to start the quest clear alchemist garden and accomplish it?");
         bool doorgaan = false; 
         while (!doorgaan)
-        string antwoord = Console.ReadLine(); if (antwoord == "Y") {Console.WriteLine($"You're now going to Clear the alchemist's garden?");}
-        else if (antwoord == "N") {Console.WriteLine("You eventually need to overcome your fears to win");} 
-        else {Console.WriteLine("Fill in either Y or N");}}
+        {string antwoord = Console.ReadLine(); if (antwoord == "Y") {Console.WriteLine($"You're now going to Clear the alchemist's garden?"); 
+        doorgaan = true;}
+        else if (antwoord == "N") {Console.WriteLine("You eventually need to overcome your fears to win"); doorgaan = true;} 
+        else {Console.WriteLine("Fill in either Y or N");}}}
 
         else if (QUEST_ID_CLEAR_FARMERS_FIELD == id) {Console.WriteLine($"Do you want to start clear farmers field and accomplish it?");
         bool doorgaan = false; 
         while (!doorgaan)
-        string antwoord = Console.ReadLine(); if (antwoord == "Y") {Console.WriteLine($"You're now going to Clear the farmers field?");}
-        else if (antwoord == "N") {Console.WriteLine("You eventually need to overcome your fears to win");} 
-        else {Console.WriteLine("Fill in either Y or N");}}
+        {string antwoord = Console.ReadLine(); if (antwoord == "Y") {Console.WriteLine($"You're now going to Clear the farmers field?"); doorgaan = true;}
+        else if (antwoord == "N") {Console.WriteLine("You eventually need to overcome your fears to win"); doorgaan = true;} 
+        else {Console.WriteLine("Fill in either Y or N");}}}
 
         else if (QUEST_ID_COLLECT_SPIDER_SILK) {Console.WriteLine($"Do you want to collect spider silk and accomplish this task?");
         bool doorgaan = false; 
         while (!doorgaan)
-        string antwoord = Console.ReadLine(); if (antwoord == "Y") {Console.WriteLine($"You're now going to collect spider silk?");}
-        else if (antwoord == "N") {Console.WriteLine("You eventually need to overcome your fears to win");} 
-        else {Console.WriteLine("Fill in either Y or N");}}
+        {string antwoord = Console.ReadLine(); if (antwoord == "Y") {Console.WriteLine($"You're now going to collect spider silk?"); doorgaan = true;}
+        else if (antwoord == "N") {Console.WriteLine("You eventually need to overcome your fears to win"); doorgaan = true;} 
+        else {Console.WriteLine("Fill in either Y or N");}}}
     }
 
     public static void PopulateQuests()
