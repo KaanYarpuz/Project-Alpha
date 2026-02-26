@@ -88,44 +88,7 @@ public static class World
         Monsters.Add(giantSpider);
     }
 
-    public static Weapon Randomweapon()
-        {
-            int randomnumber = new Random().Next(Weapons.count);
 
-            return Weapons[randomnumber];
-        }
-
-    public static void Reward_quest(bool afgemaakt)
-        {
-            if (afgemaakt) {Player.Add(Randomweapon);}
-
-            else if (!afgemaakt) {Console.WriteLine("Better luck next time");}
-        }
-
-    public static void Quest(int id, string title, string task)
-    {
-        if (QUEST_ID_CLEAR_ALCHEMIST_GARDEN == id) {Console.WriteLine($"Do you want to start the quest clear alchemist garden and accomplish it?");
-        bool doorgaan = false; 
-        while (!doorgaan)
-        {string antwoord = Console.ReadLine(); if (antwoord == "Y") {Console.WriteLine($"You're now going to Clear the alchemist's garden?"); 
-        doorgaan = true;}
-        else if (antwoord == "N") {Console.WriteLine("You eventually need to overcome your fears to win"); doorgaan = true;} 
-        else {Console.WriteLine("Fill in either Y or N");}}}
-
-        else if (QUEST_ID_CLEAR_FARMERS_FIELD == id) {Console.WriteLine($"Do you want to start clear farmers field and accomplish it?");
-        bool doorgaan = false; 
-        while (!doorgaan)
-        {string antwoord = Console.ReadLine(); if (antwoord == "Y") {Console.WriteLine($"You're now going to Clear the farmers field?"); doorgaan = true;}
-        else if (antwoord == "N") {Console.WriteLine("You eventually need to overcome your fears to win"); doorgaan = true;} 
-        else {Console.WriteLine("Fill in either Y or N");}}}
-
-        else if (QUEST_ID_COLLECT_SPIDER_SILK == id) {Console.WriteLine($"Do you want to collect spider silk and accomplish this task?");
-        bool doorgaan = false; 
-        while (!doorgaan)
-        {string antwoord = Console.ReadLine(); if (antwoord == "Y") {Console.WriteLine($"You're now going to collect spider silk?"); doorgaan = true;}
-        else if (antwoord == "N") {Console.WriteLine("You eventually need to overcome your fears to win"); doorgaan = true;} 
-        else {Console.WriteLine("Fill in either Y or N");}}}
-    }
     public static void PopulateQuests()
     {
         Quest clearAlchemistGarden =
