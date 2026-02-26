@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leonv\\OneDrive - Hogeschool Rotterdam\\HR2025-2026\\Semester2\\Project-Alpha\\Project-Alpha\\Project-Alpha.csproj": {}
+    "C:\\Users\\tunah\\Documents\\2nd_half\\Project\\Project-Alpha\\Project-Alpha\\Project-Alpha.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leonv\\OneDrive - Hogeschool Rotterdam\\HR2025-2026\\Semester2\\Project-Alpha\\Project-Alpha\\Project-Alpha.csproj": {
+    "C:\\Users\\tunah\\Documents\\2nd_half\\Project\\Project-Alpha\\Project-Alpha\\Project-Alpha.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leonv\\OneDrive - Hogeschool Rotterdam\\HR2025-2026\\Semester2\\Project-Alpha\\Project-Alpha\\Project-Alpha.csproj",
+        "projectUniqueName": "C:\\Users\\tunah\\Documents\\2nd_half\\Project\\Project-Alpha\\Project-Alpha\\Project-Alpha.csproj",
         "projectName": "Project-Alpha",
-        "projectPath": "C:\\Users\\leonv\\OneDrive - Hogeschool Rotterdam\\HR2025-2026\\Semester2\\Project-Alpha\\Project-Alpha\\Project-Alpha.csproj",
-        "packagesPath": "C:\\Users\\leonv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leonv\\OneDrive - Hogeschool Rotterdam\\HR2025-2026\\Semester2\\Project-Alpha\\Project-Alpha\\obj\\",
+        "projectPath": "C:\\Users\\tunah\\Documents\\2nd_half\\Project\\Project-Alpha\\Project-Alpha\\Project-Alpha.csproj",
+        "packagesPath": "C:\\Users\\tunah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tunah\\Documents\\2nd_half\\Project\\Project-Alpha\\Project-Alpha\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\leonv\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\tunah\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

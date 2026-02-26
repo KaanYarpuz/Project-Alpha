@@ -79,9 +79,7 @@ namespace Project_Alpha
                 {
                     Console.WriteLine("You can't go that way.");
                 }
-            }
-
-            
+            }  
         }
     }
 }
