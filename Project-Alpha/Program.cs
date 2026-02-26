@@ -58,7 +58,7 @@ namespace Project_Alpha
                         if (option_f == 1)
                         {
                             //Attack
-                            Rat_M -= player.Equiped.Damage;
+                            Rat_M.Health -= player.Equiped.Damage;
                         }
                         else if (option_f == 2)
                         {
@@ -72,7 +72,7 @@ namespace Project_Alpha
                     }
 
                     // monster or player dies
-                    if (Rat_M.health == 0) 
+                    if (Rat_M.Health == 0) 
                     {
                         // monster dead
                         Console.WriteLine($"{Rat_M.Name} is defeated");
