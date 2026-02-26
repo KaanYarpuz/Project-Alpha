@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 
 namespace Project_Alpha
 {
@@ -31,6 +32,8 @@ public static class World
     public const int QUEST_ID_CLEAR_ALCHEMIST_GARDEN = 1;
     public const int QUEST_ID_CLEAR_FARMERS_FIELD = 2;
     public const int QUEST_ID_COLLECT_SPIDER_SILK = 3;
+
+    
 
     public const int LOCATION_ID_HOME = 1;
     public const int LOCATION_ID_TOWN_SQUARE = 2;
@@ -83,6 +86,7 @@ public static class World
         Monsters.Add(snake);
         Monsters.Add(giantSpider);
     }
+
 
     public static void PopulateQuests()
     {

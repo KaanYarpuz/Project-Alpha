@@ -6,8 +6,17 @@ namespace Project_Alpha
         {
             Console.WriteLine("Game starting...");
 
-            Player player = new Player(10, World.LocationByID(1));
+            Player player = new Player(10);
             player.inventory.Add(World.Weapons[0]);
+
+            var locations = World.Locations;
+
+            Monster Rat_M = World.Monsters[0];
+
+            foreach (var location in locations)
+            {
+                Console.WriteLine($"Location: {location.Name}");
+            }
 
 
             Console.WriteLine("World initialized.");
@@ -35,11 +44,37 @@ namespace Project_Alpha
                 else if (option == 2)
                 {
                     // Move
-                    player.Move();
                 }
                 else if (option == 3)
                 {
                     // Fight
+                    Console.WriteLine($"{Rat_M.Name} has appeard");
+                    while (!(Rat_M.Health ==  0) || !(player.Health == 0))
+                    {
+                        // monster
+                        Console.WriteLine("-------------------------------");
+                        Rat_M.Show_Description();
+                        // player
+                        Console.WriteLine("-------------------------------");
+                        Console.WriteLine($"Player health: {player.Health}");
+                        // do something
+                        Console.WriteLine("[1]: Attack\n[2]: Flee\n[3]: view inventory/change weapon");
+                        int option_f = Convert.ToInt32(Console.ReadLine()); 
+                        if (option_f == 1)
+                        {
+                            //Attack
+                        }
+                        else if (option_f == 2)
+                        {
+                            // Flee
+                            break;
+                        }
+                        else if (option_f == 3)
+                        {
+                            // view inventory
+                        }
+                    }
+                    
                 }
                 else if (option == 4) {Gamewin = true;}
 
