@@ -47,7 +47,7 @@ namespace Project_Alpha
                 {
                     // Fight
                     Console.WriteLine($"{Rat_M.Name} has appeard");
-                    while (Rat_M.Health >=  0 || player.Health >= 0)
+                    while (Rat_M.Health >=  0 && player.Health >= 0)
                     {
                         // monster
                         Console.WriteLine("-------------------------------");
@@ -67,7 +67,7 @@ namespace Project_Alpha
                             {
                                 // Attack player
                                 player.Health -= Rat_M.Attack;
-                                Console.WriteLine($"{Rat_M.Health} dealt {player.Equiped.Damage}");
+                                Console.WriteLine($"{Rat_M.Name} dealt {player.Equiped.Damage}");
                             }  
                         }
                         else if (option_f == 2)
@@ -117,7 +117,7 @@ namespace Project_Alpha
                         // monster dead
                         Console.WriteLine($"{Rat_M.Name} is defeated");
                     }
-                    else
+                    else if (player.Health >= 0)
                     {
                         // player dead
                         Console.WriteLine($"Weak twink ass beta ahh, your 6 feet under");
