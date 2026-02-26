@@ -112,7 +112,7 @@ namespace Project_Alpha
                     }
 
                     // monster or player dies
-                    if (Rat_M.Health >= 0) 
+                    if (Rat_M.Health <= 0) 
                     {
                         // monster dead
                         Console.WriteLine($"{Rat_M.Name} is defeated");
