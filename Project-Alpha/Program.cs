@@ -6,17 +6,11 @@ namespace Project_Alpha
         {
             Console.WriteLine("Game starting...");
 
-            Player player = new Player(10);
+            Player player = new Player(10, World.LocationByID(1));
             player.inventory.Add(World.Weapons[0]);
 
-            var locations = World.Locations;
 
             Monster Rat_M = World.Monsters[0];
-
-            foreach (var location in locations)
-            {
-                Console.WriteLine($"Location: {location.Name}");
-            }
 
 
             Console.WriteLine("World initialized.");
@@ -44,6 +38,7 @@ namespace Project_Alpha
                 else if (option == 2)
                 {
                     // Move
+                    player.Move();
                 }
                 else if (option == 3)
                 {
