@@ -12,7 +12,6 @@ namespace Project_Alpha
             // rusty sword equipped at start
             player.Equiped = player.inventory[0];
 
-
             Monster Rat_M = World.Monsters[0];
 
 
@@ -45,7 +44,6 @@ namespace Project_Alpha
                 else if (option == 3)
                 {
                     // Fight
-                    Console.WriteLine($"{Rat_M.Name} has appeard");
                     while (Rat_M.Health >=  0 && player.Health >= 0)
                     {
                         // monster
