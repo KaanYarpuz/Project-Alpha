@@ -8,6 +8,8 @@ namespace Project_Alpha
 
             Player player = new Player(10);
             player.inventory.Add(World.Weapons[0]);
+            // rusty sword equipped at start
+            player.Equiped = player.inventory[0];
 
             var locations = World.Locations;
 
@@ -71,7 +73,37 @@ namespace Project_Alpha
                         }
                         else if (option_f == 3)
                         {
-                            // view inventory
+                            Console.WriteLine("-------------------------------");
+                            Console.WriteLine("Inventory:");
+
+                            // Show inventory with numbers
+                            for (int i = 0; i < player.inventory.Count; i++)
+                            {
+                                Weapon weapon = player.inventory[i];
+
+                                if (weapon == player.Equiped)
+                                {
+                                    Console.WriteLine($"{i + 1}. {weapon.Name} (Equipped)");
+                                }
+                                else
+                                {
+                                    Console.WriteLine($"{i + 1}. {weapon.Name}");
+                                }
+                            }
+
+                            Console.WriteLine("Select weapon number to equip:");
+
+                            int choice = Convert.ToInt32(Console.ReadLine());
+
+                            if (choice > 0 && choice <= player.inventory.Count)
+                            {
+                                player.Equiped = player.inventory[choice - 1];
+                                Console.WriteLine($"You equipped {player.Equiped.Name}!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Wrong number dumb dumb.");
+                            }
                         }
                     }
                     
