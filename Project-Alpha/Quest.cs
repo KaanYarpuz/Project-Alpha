@@ -13,25 +13,14 @@ namespace Project_Alpha
             TASK = task; 
             
         }
-        public static Weapon Randomweapon()
+        public Weapon Randomweapon()
         {
-            int randomnumber = new Random().Next(Weapons.count);
+            int randomnumber = new Random().Next(World.Weapons.Count());
 
             return World.Weapons[randomnumber];
         }
 
-        public static void Reward_quest(bool afgemaakt)
-        {
-            if (afgemaakt) { return Randomweapon;}
-
-            else if (!afgemaakt) 
-            {
-                Console.WriteLine("Better luck next time daddy");
-                return;
-            }
-        }
-
-        public static void Quest(int id, string title, string task)
+        public void quest_completion(int id, string title, string task)
         {
             if (World.QUEST_ID_CLEAR_ALCHEMIST_GARDEN == id) {Console.WriteLine($"Do you want to start the quest clear alchemist garden and accomplish it?");
             bool doorgaan = false; 
