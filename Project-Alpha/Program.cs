@@ -63,6 +63,7 @@ namespace Project_Alpha
                         if (option_f == 1)
                         {
                             //Attack
+                            Rat_M -= player.Equiped.Damage;
                         }
                         else if (option_f == 2)
                         {
@@ -73,6 +74,16 @@ namespace Project_Alpha
                         {
                             // view inventory
                         }
+                    }
+
+                    if (Rat_M.health) 
+                    {
+                        Console.WriteLine($"{Rat_M.Name} is defeated");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Weak twink ass beta ahh, your 6 feet under");
+                        Gamewin = true;
                     }
                     
                 }
