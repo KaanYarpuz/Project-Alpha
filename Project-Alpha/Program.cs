@@ -45,7 +45,7 @@ namespace Project_Alpha
                 }
                 else if (option == 3)
                 {
-                    // Fight
+                    // Fighty
                     Console.WriteLine($"{Rat_M.Name} has appeard");
                     while (Rat_M.Health >=  0 || player.Health >= 0)
                     {
