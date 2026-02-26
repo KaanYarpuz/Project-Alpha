@@ -52,7 +52,7 @@ namespace Project_Alpha
                         // player
                         Console.WriteLine("-------------------------------");
                         Console.WriteLine($"Player health: {player.Health}");
-                        // do something
+                        // Player gets options
                         Console.WriteLine("[1]: Attack\n[2]: Flee\n[3]: view inventory/change weapon");
                         int option_f = Convert.ToInt32(Console.ReadLine()); 
                         if (option_f == 1)
@@ -71,12 +71,15 @@ namespace Project_Alpha
                         }
                     }
 
-                    if (Rat_M.health) 
+                    // monster or player dies
+                    if (Rat_M.health == 0) 
                     {
+                        // monster dead
                         Console.WriteLine($"{Rat_M.Name} is defeated");
                     }
                     else
                     {
+                        // player dead
                         Console.WriteLine($"Weak twink ass beta ahh, your 6 feet under");
                         Gamewin = true;
                     }
