@@ -19,7 +19,6 @@ namespace Project_Alpha
             Console.WriteLine("World initialized.");
 
             bool Gamewin = false;
-            int option = 0;
 
             while (!Gamewin)
             {
@@ -29,7 +28,7 @@ namespace Project_Alpha
                 Console.WriteLine("3: Fight");
                 Console.WriteLine("4: Quit");
 
-                option = Convert.ToInt32(Console.ReadLine());
+                int option = Convert.ToInt32(Console.ReadLine());
 
                 if (option == 1)
                 {
@@ -63,11 +62,11 @@ namespace Project_Alpha
                             //Attack monster
                             Rat_M.Health -= player.Equiped.Damage;
                             Console.WriteLine($"You deal {player.Equiped.Damage}");
-                            if (Rat_M.Health <= 1)
+                            if (Rat_M.Health >= 1)
                             {
                                 // Attack player
                                 player.Health -= Rat_M.Attack;
-                                Console.WriteLine($"{Rat_M.Name} dealt {player.Equiped.Damage}");
+                                Console.WriteLine($"{Rat_M.Name} dealt {Rat_M.Attack}");
                             }  
                         }
                         else if (option_f == 2)
@@ -99,7 +98,7 @@ namespace Project_Alpha
 
                             int choice = Convert.ToInt32(Console.ReadLine());
 
-                            if (choice > 0 && choice <= player.inventory.Count)
+                            if (choice > 0 && choice <= player.inventory.Count())
                             {
                                 player.Equiped = player.inventory[choice - 1];
                                 Console.WriteLine($"You equipped {player.Equiped.Name}!");
@@ -112,12 +111,12 @@ namespace Project_Alpha
                     }
 
                     // monster or player dies
-                    if (Rat_M.Health >= 0) 
+                    if (Rat_M.Health <= 0) 
                     {
                         // monster dead
                         Console.WriteLine($"{Rat_M.Name} is defeated");
                     }
-                    else if (player.Health >= 0)
+                    else if (player.Health <= 0)
                     {
                         // player dead
                         Console.WriteLine($"Weak twink ass beta ahh, your 6 feet under");
