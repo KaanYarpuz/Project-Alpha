@@ -63,7 +63,7 @@ namespace Project_Alpha
                             //Attack monster
                             Rat_M.Health -= player.Equiped.Damage;
                             Console.WriteLine($"You deal {player.Equiped.Damage}");
-                            if (Rat_M.Health <= 1)
+                            if (Rat_M.Health >= 1)
                             {
                                 // Attack player
                                 player.Health -= Rat_M.Attack;
