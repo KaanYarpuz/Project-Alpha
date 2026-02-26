@@ -80,19 +80,7 @@ namespace Project_Alpha
                             Console.WriteLine("Inventory:");
 
                             // Show inventory with numbers
-                            for (int i = 0; i < player.inventory.Count; i++)
-                            {
-                                Weapon weapon = player.inventory[i];
-
-                                if (weapon == player.Equiped)
-                                {
-                                    Console.WriteLine($"{i + 1}. {weapon.Name} (Equipped)");
-                                }
-                                else
-                                {
-                                    Console.WriteLine($"{i + 1}. {weapon.Name}");
-                                }
-                            }
+                            player.Show_inv();
 
                             Console.WriteLine("Select weapon number to equip:");
 
