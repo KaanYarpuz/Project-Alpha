@@ -6,19 +6,13 @@ namespace Project_Alpha
         {
             Console.WriteLine("Game starting...");
 
-            Player player = new Player(10);
+            Player player = new Player(10, World.LocationByID(1));
             player.inventory.Add(World.Weapons[0]);
             // rusty sword equipped at start
             player.Equiped = player.inventory[0];
 
-            var locations = World.Locations;
 
             Monster Rat_M = World.Monsters[0];
-
-            foreach (var location in locations)
-            {
-                Console.WriteLine($"Location: {location.Name}");
-            }
 
 
             Console.WriteLine("World initialized.");
@@ -46,6 +40,7 @@ namespace Project_Alpha
                 else if (option == 2)
                 {
                     // Move
+                    player.Move();
                 }
                 else if (option == 3)
                 {
@@ -59,12 +54,13 @@ namespace Project_Alpha
                         // player
                         Console.WriteLine("-------------------------------");
                         Console.WriteLine($"Player health: {player.Health}");
-                        // do something
+                        // Player gets options
                         Console.WriteLine("[1]: Attack\n[2]: Flee\n[3]: view inventory/change weapon");
                         int option_f = Convert.ToInt32(Console.ReadLine()); 
                         if (option_f == 1)
                         {
                             //Attack
+                            Rat_M.Health -= player.Equiped.Damage;
                         }
                         else if (option_f == 2)
                         {
@@ -105,6 +101,19 @@ namespace Project_Alpha
                                 Console.WriteLine("Wrong number dumb dumb.");
                             }
                         }
+                    }
+
+                    // monster or player dies
+                    if (Rat_M.Health == 0) 
+                    {
+                        // monster dead
+                        Console.WriteLine($"{Rat_M.Name} is defeated");
+                    }
+                    else
+                    {
+                        // player dead
+                        Console.WriteLine($"Weak twink ass beta ahh, your 6 feet under");
+                        Gamewin = true;
                     }
                     
                 }
