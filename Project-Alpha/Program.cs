@@ -8,6 +8,7 @@ namespace Project_Alpha
 
             Player player = new Player(10, World.LocationByID(1));
             player.inventory.Add(World.Weapons[0]);
+            player.inventory.Add(World.Weapons[1]);
             // rusty sword equipped at start
             player.Equiped = player.inventory[0];
 
@@ -46,7 +47,7 @@ namespace Project_Alpha
                 {
                     // Fight
                     Console.WriteLine($"{Rat_M.Name} has appeard");
-                    while (!(Rat_M.Health ==  0) || !(player.Health == 0))
+                    while (Rat_M.Health >=  0 || player.Health >= 0)
                     {
                         // monster
                         Console.WriteLine("-------------------------------");
@@ -59,8 +60,15 @@ namespace Project_Alpha
                         int option_f = Convert.ToInt32(Console.ReadLine()); 
                         if (option_f == 1)
                         {
-                            //Attack
+                            //Attack monster
                             Rat_M.Health -= player.Equiped.Damage;
+                            Console.WriteLine($"You deal {player.Equiped.Damage}");
+                            if (Rat_M.Health <= 1)
+                            {
+                                // Attack player
+                                player.Health -= Rat_M.Attack;
+                                Console.WriteLine($"{Rat_M.Health} dealt {player.Equiped.Damage}");
+                            }  
                         }
                         else if (option_f == 2)
                         {
@@ -104,7 +112,7 @@ namespace Project_Alpha
                     }
 
                     // monster or player dies
-                    if (Rat_M.Health == 0) 
+                    if (Rat_M.Health >= 0) 
                     {
                         // monster dead
                         Console.WriteLine($"{Rat_M.Name} is defeated");
