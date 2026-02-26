@@ -19,10 +19,19 @@ namespace Project_Alpha
 
         public void Show_inv()
         {
-            Console.WriteLine("items:");
-            foreach (Weapon item in inventory)
+            Console.WriteLine("Items:");
+            for (int i = 0; i < inventory.Count; i++)
             {
-                Console.WriteLine($"- {item.Name}");
+                Weapon item = inventory[i];
+
+                if (item == Equiped)
+                {
+                    Console.WriteLine($"{i + 1}. {item.Name} (Equipped)");
+                }
+                else
+                {
+                    Console.WriteLine($"{i + 1}. {item.Name}");
+                }
             }
         }
 

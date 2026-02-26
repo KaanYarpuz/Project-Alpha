@@ -8,6 +8,9 @@ namespace Project_Alpha
 
             Player player = new Player(10, World.LocationByID(1));
             player.inventory.Add(World.Weapons[0]);
+            player.inventory.Add(World.Weapons[1]);
+            // rusty sword equipped at start
+            player.Equiped = player.inventory[0];
 
 
             Monster Rat_M = World.Monsters[0];
@@ -44,7 +47,7 @@ namespace Project_Alpha
                 {
                     // Fight
                     Console.WriteLine($"{Rat_M.Name} has appeard");
-                    while (!(Rat_M.Health ==  0) || !(player.Health == 0))
+                    while (Rat_M.Health >=  0 || player.Health >= 0)
                     {
                         // monster
                         Console.WriteLine("-------------------------------");
@@ -52,13 +55,20 @@ namespace Project_Alpha
                         // player
                         Console.WriteLine("-------------------------------");
                         Console.WriteLine($"Player health: {player.Health}");
-                        // do something
+                        // Player gets options
                         Console.WriteLine("[1]: Attack\n[2]: Flee\n[3]: view inventory/change weapon");
                         int option_f = Convert.ToInt32(Console.ReadLine()); 
                         if (option_f == 1)
                         {
-                            //Attack
-                            Rat_M -= player.Equiped.Damage;
+                            //Attack monster
+                            Rat_M.Health -= player.Equiped.Damage;
+                            Console.WriteLine($"You deal {player.Equiped.Damage}");
+                            if (Rat_M.Health <= 1)
+                            {
+                                // Attack player
+                                player.Health -= Rat_M.Attack;
+                                Console.WriteLine($"{Rat_M.Health} dealt {player.Equiped.Damage}");
+                            }  
                         }
                         else if (option_f == 2)
                         {
@@ -67,16 +77,49 @@ namespace Project_Alpha
                         }
                         else if (option_f == 3)
                         {
-                            // view inventory
+                            Console.WriteLine("-------------------------------");
+                            Console.WriteLine("Inventory:");
+
+                            // Show inventory with numbers
+                            for (int i = 0; i < player.inventory.Count; i++)
+                            {
+                                Weapon weapon = player.inventory[i];
+
+                                if (weapon == player.Equiped)
+                                {
+                                    Console.WriteLine($"{i + 1}. {weapon.Name} (Equipped)");
+                                }
+                                else
+                                {
+                                    Console.WriteLine($"{i + 1}. {weapon.Name}");
+                                }
+                            }
+
+                            Console.WriteLine("Select weapon number to equip:");
+
+                            int choice = Convert.ToInt32(Console.ReadLine());
+
+                            if (choice > 0 && choice <= player.inventory.Count)
+                            {
+                                player.Equiped = player.inventory[choice - 1];
+                                Console.WriteLine($"You equipped {player.Equiped.Name}!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Wrong number dumb dumb.");
+                            }
                         }
                     }
 
-                    if (Rat_M.health) 
+                    // monster or player dies
+                    if (Rat_M.Health >= 0) 
                     {
+                        // monster dead
                         Console.WriteLine($"{Rat_M.Name} is defeated");
                     }
                     else
                     {
+                        // player dead
                         Console.WriteLine($"Weak twink ass beta ahh, your 6 feet under");
                         Gamewin = true;
                     }
