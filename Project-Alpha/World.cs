@@ -104,7 +104,7 @@ public static class World
         else if (antwoord == "N") {Console.WriteLine("You eventually need to overcome your fears to win"); doorgaan = true;} 
         else {Console.WriteLine("Fill in either Y or N");}}}
 
-        else if (QUEST_ID_COLLECT_SPIDER_SILK) {Console.WriteLine($"Do you want to collect spider silk and accomplish this task?");
+        else if (QUEST_ID_COLLECT_SPIDER_SILK == id) {Console.WriteLine($"Do you want to collect spider silk and accomplish this task?");
         bool doorgaan = false; 
         while (!doorgaan)
         {string antwoord = Console.ReadLine(); if (antwoord == "Y") {Console.WriteLine($"You're now going to collect spider silk?"); doorgaan = true;}
