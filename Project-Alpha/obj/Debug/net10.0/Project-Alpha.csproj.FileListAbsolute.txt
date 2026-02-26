@@ -1,5 +1,0 @@
-C:\Users\tunah\Documents\2nd_half\Project\Project-Alpha\Project-Alpha\obj\Debug\net10.0\Project-Alpha.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\tunah\Documents\2nd_half\Project\Project-Alpha\Project-Alpha\obj\Debug\net10.0\Project-Alpha.AssemblyInfoInputs.cache
-C:\Users\tunah\Documents\2nd_half\Project\Project-Alpha\Project-Alpha\obj\Debug\net10.0\Project-Alpha.AssemblyInfo.cs
-C:\Users\tunah\Documents\2nd_half\Project\Project-Alpha\Project-Alpha\obj\Debug\net10.0\Project-Alpha.csproj.CoreCompileInputs.cache
-C:\Users\tunah\Documents\2nd_half\Project\Project-Alpha\Project-Alpha\obj\Debug\net10.0\Project-Alpha.sourcelink.json
