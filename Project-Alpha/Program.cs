@@ -117,7 +117,7 @@ namespace Project_Alpha
                         // monster dead
                         Console.WriteLine($"{Rat_M.Name} is defeated");
                     }
-                    else if (player.Health >= 0)
+                    else if (player.Health <= 0)
                     {
                         // player dead
                         Console.WriteLine($"Weak twink ass beta ahh, your 6 feet under");
