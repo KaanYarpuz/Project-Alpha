@@ -76,7 +76,7 @@ public static class World
 
     public static void PopulateMonsters()
     {
-        Monster rat = new Monster(MONSTER_ID_RAT, "rat", 1, 3);
+        Monster rat = new Monster(MONSTER_ID_RAT, "devious trio of rats", 3, 9);
 
 
         Monster snake = new Monster(MONSTER_ID_SNAKE, "snake", 10, 7);
