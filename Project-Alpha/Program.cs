@@ -19,7 +19,6 @@ namespace Project_Alpha
             Console.WriteLine("World initialized.");
 
             bool Gamewin = false;
-            int option = 0;
 
             while (!Gamewin)
             {
@@ -29,7 +28,7 @@ namespace Project_Alpha
                 Console.WriteLine("3: Fight");
                 Console.WriteLine("4: Quit");
 
-                option = Convert.ToInt32(Console.ReadLine());
+                int option = Convert.ToInt32(Console.ReadLine());
 
                 if (option == 1)
                 {
@@ -67,7 +66,7 @@ namespace Project_Alpha
                             {
                                 // Attack player
                                 player.Health -= Rat_M.Attack;
-                                Console.WriteLine($"{Rat_M.Name} dealt {player.Equiped.Damage}");
+                                Console.WriteLine($"{Rat_M.Name} dealt {Rat_M.Attack}");
                             }  
                         }
                         else if (option_f == 2)
@@ -99,7 +98,7 @@ namespace Project_Alpha
 
                             int choice = Convert.ToInt32(Console.ReadLine());
 
-                            if (choice > 0 && choice <= player.inventory.Count)
+                            if (choice > 0 && choice <= player.inventory.Count())
                             {
                                 player.Equiped = player.inventory[choice - 1];
                                 Console.WriteLine($"You equipped {player.Equiped.Name}!");
