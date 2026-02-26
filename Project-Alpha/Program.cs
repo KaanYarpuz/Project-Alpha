@@ -48,10 +48,31 @@ namespace Project_Alpha
                 else if (option == 3)
                 {
                     // Fight
-                    Rat_M.Show_Description();
-                    while (Rat_M.Health ==  0 || player.Health == 0)
+                    Console.WriteLine($"{Rat_M.Name} has appeard");
+                    while (!(Rat_M.Health ==  0) || !(player.Health == 0))
                     {
-                        
+                        // monster
+                        Console.WriteLine("-------------------------------");
+                        Rat_M.Show_Description();
+                        // player
+                        Console.WriteLine("-------------------------------");
+                        Console.WriteLine($"Player health: {player.Health}");
+                        // do something
+                        Console.WriteLine("[1]: Attack\n[2]: Flee\n[3]: view inventory/change weapon");
+                        int option_f = Convert.ToInt32(Console.ReadLine()); 
+                        if (option_f == 1)
+                        {
+                            //Attack
+                        }
+                        else if (option_f == 2)
+                        {
+                            // Flee
+                            break;
+                        }
+                        else if (option_f == 3)
+                        {
+                            // view inventory
+                        }
                     }
                     
                 }

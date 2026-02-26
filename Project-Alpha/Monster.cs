@@ -17,6 +17,6 @@ public class Monster
 
     public void Show_Description ()
     {
-        Console.WriteLine($"{Name} has appeard");
+        Console.WriteLine($"{Name}:\nHealth: {Health}\nAttack: {Attack}");
     }
 } 
