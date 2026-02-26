@@ -47,7 +47,7 @@ namespace Project_Alpha
                 {
                     // Fight
                     Console.WriteLine($"{Rat_M.Name} has appeard");
-                    while (Rat_M.Health >=  0 || player.Health >= 0)
+                    while (Rat_M.Health >=  0 && player.Health >= 0)
                     {
                         // monster
                         Console.WriteLine("-------------------------------");
