@@ -6,17 +6,11 @@ namespace Project_Alpha
         {
             Console.WriteLine("Game starting...");
 
-            Player player = new Player(10);
+            Player player = new Player(10, World.LocationByID(1));
             player.inventory.Add(World.Weapons[0]);
 
-            var locations = World.Locations;
 
             Monster Rat_M = World.Monsters[0];
-
-            foreach (var location in locations)
-            {
-                Console.WriteLine($"Location: {location.Name}");
-            }
 
 
             Console.WriteLine("World initialized.");
@@ -44,6 +38,7 @@ namespace Project_Alpha
                 else if (option == 2)
                 {
                     // Move
+                    player.Move();
                 }
                 else if (option == 3)
                 {
@@ -63,6 +58,7 @@ namespace Project_Alpha
                         if (option_f == 1)
                         {
                             //Attack
+                            Rat_M -= player.Equiped.Damage;
                         }
                         else if (option_f == 2)
                         {
@@ -73,6 +69,16 @@ namespace Project_Alpha
                         {
                             // view inventory
                         }
+                    }
+
+                    if (Rat_M.health) 
+                    {
+                        Console.WriteLine($"{Rat_M.Name} is defeated");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Weak twink ass beta ahh, your 6 feet under");
+                        Gamewin = true;
                     }
                     
                 }
