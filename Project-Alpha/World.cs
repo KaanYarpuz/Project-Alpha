@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using System.Security;
 
 namespace Project_Alpha
 {
@@ -86,6 +87,20 @@ public static class World
         Monsters.Add(snake);
         Monsters.Add(giantSpider);
     }
+
+    public static Weapon Randomweapon()
+        {
+            int randomnumber = new Random().Next(Weapons.count);
+
+            return Weapons[randomnumber];
+        }
+
+    public static void Reward_quest(bool afgemaakt)
+        {
+            if (afgemaakt) {Player.Add(Randomweapon);}
+
+            else if (!afgemaakt) {Console.WriteLine("Better luck next time");}
+        }
 
     public static void Quest(int id, string title, string task)
     {
