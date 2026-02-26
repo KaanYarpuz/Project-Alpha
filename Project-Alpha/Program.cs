@@ -11,6 +11,8 @@ namespace Project_Alpha
 
             var locations = World.Locations;
 
+            Monster Rat_M = World.Monsters[0];
+
             foreach (var location in locations)
             {
                 Console.WriteLine($"Location: {location.Name}");
@@ -46,6 +48,12 @@ namespace Project_Alpha
                 else if (option == 3)
                 {
                     // Fight
+                    Rat_M.Show_Description();
+                    while (Rat_M.Health ==  0 || player.Health == 0)
+                    {
+                        
+                    }
+                    
                 }
                 else if (option == 4) {Gamewin = true;}
 

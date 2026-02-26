@@ -14,4 +14,9 @@ public class Monster
         Attack = C_Attack;
         Health = C_Health;
     }
+
+    public void Show_Description ()
+    {
+        Console.WriteLine($"{Name} has appeard");
+    }
 } 
