@@ -12,7 +12,6 @@ namespace Project_Alpha
             // rusty sword equipped at start
             player.Equiped = player.inventory[0];
 
-            Monster Rat_M = World.Monsters[0];
 
 
             Console.WriteLine("World initialized.");
@@ -43,12 +42,19 @@ namespace Project_Alpha
                 }
                 else if (option == 3)
                 {
+                    Monster? monster = player.CurrentLocation.MonsterLivingHere;
+
+                    if (monster == null)
+                    {
+                        Console.WriteLine("There is no monster here to fight.");
+                        continue;
+                    }
                     // Fight
-                    while (Rat_M.Health >=  0 && player.Health >= 0)
+                    while (monster.Health >=  0 && player.Health >= 0)
                     {
                         // monster
                         Console.WriteLine("-------------------------------");
-                        Rat_M.Show_Description();
+                        monster.Show_Description();
                         // player
                         Console.WriteLine("-------------------------------");
                         Console.WriteLine($"Player health: {player.Health}");
@@ -58,13 +64,13 @@ namespace Project_Alpha
                         if (option_f == 1)
                         {
                             //Attack monster
-                            Rat_M.Health -= player.Equiped.Damage;
+                            monster.Health -= player.Equiped.Damage;
                             Console.WriteLine($"You deal {player.Equiped.Damage}");
-                            if (Rat_M.Health >= 1)
+                            if (monster.Health >= 1)
                             {
                                 // Attack player
-                                player.Health -= Rat_M.Attack;
-                                Console.WriteLine($"{Rat_M.Name} dealt {Rat_M.Attack}");
+                                player.Health -= monster.Attack;
+                                Console.WriteLine($"{monster.Name} dealt {monster.Attack}");
                             }  
                         }
                         else if (option_f == 2)
@@ -109,10 +115,11 @@ namespace Project_Alpha
                     }
 
                     // monster or player dies
-                    if (Rat_M.Health <= 0) 
+                    if (monster.Health <= 0) 
                     {
                         // monster dead
-                        Console.WriteLine($"{Rat_M.Name} is defeated");
+                        Console.WriteLine($"{monster.Name} is defeated");
+                        player.CompleteQuestIfPossible(monster);
                     }
                     else if (player.Health <= 0)
                     {
