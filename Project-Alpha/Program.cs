@@ -12,14 +12,12 @@ namespace Project_Alpha
             // rusty sword equipped at start
             player.Equiped = player.inventory[0];
 
-
             Monster Rat_M = World.Monsters[0];
 
 
             Console.WriteLine("World initialized.");
 
             bool Gamewin = false;
-            int option = 0;
 
             while (!Gamewin)
             {
@@ -29,7 +27,7 @@ namespace Project_Alpha
                 Console.WriteLine("3: Fight");
                 Console.WriteLine("4: Quit");
 
-                option = Convert.ToInt32(Console.ReadLine());
+                int option = Convert.ToInt32(Console.ReadLine());
 
                 if (option == 1)
                 {
@@ -46,8 +44,7 @@ namespace Project_Alpha
                 else if (option == 3)
                 {
                     // Fight
-                    Console.WriteLine($"{Rat_M.Name} has appeard");
-                    while (Rat_M.Health >=  0 || player.Health >= 0)
+                    while (Rat_M.Health >=  0 && player.Health >= 0)
                     {
                         // monster
                         Console.WriteLine("-------------------------------");
@@ -63,11 +60,11 @@ namespace Project_Alpha
                             //Attack monster
                             Rat_M.Health -= player.Equiped.Damage;
                             Console.WriteLine($"You deal {player.Equiped.Damage}");
-                            if (Rat_M.Health <= 1)
+                            if (Rat_M.Health >= 1)
                             {
                                 // Attack player
                                 player.Health -= Rat_M.Attack;
-                                Console.WriteLine($"{Rat_M.Health} dealt {player.Equiped.Damage}");
+                                Console.WriteLine($"{Rat_M.Name} dealt {Rat_M.Attack}");
                             }  
                         }
                         else if (option_f == 2)
@@ -81,25 +78,13 @@ namespace Project_Alpha
                             Console.WriteLine("Inventory:");
 
                             // Show inventory with numbers
-                            for (int i = 0; i < player.inventory.Count; i++)
-                            {
-                                Weapon weapon = player.inventory[i];
-
-                                if (weapon == player.Equiped)
-                                {
-                                    Console.WriteLine($"{i + 1}. {weapon.Name} (Equipped)");
-                                }
-                                else
-                                {
-                                    Console.WriteLine($"{i + 1}. {weapon.Name}");
-                                }
-                            }
+                            player.Show_inv();
 
                             Console.WriteLine("Select weapon number to equip:");
 
                             int choice = Convert.ToInt32(Console.ReadLine());
 
-                            if (choice > 0 && choice <= player.inventory.Count)
+                            if (choice > 0 && choice <= player.inventory.Count())
                             {
                                 player.Equiped = player.inventory[choice - 1];
                                 Console.WriteLine($"You equipped {player.Equiped.Name}!");
@@ -112,12 +97,12 @@ namespace Project_Alpha
                     }
 
                     // monster or player dies
-                    if (Rat_M.Health >= 0) 
+                    if (Rat_M.Health <= 0) 
                     {
                         // monster dead
                         Console.WriteLine($"{Rat_M.Name} is defeated");
                     }
-                    else
+                    else if (player.Health <= 0)
                     {
                         // player dead
                         Console.WriteLine($"Weak twink ass beta ahh, your 6 feet under");
