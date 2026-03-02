@@ -1,0 +1,15 @@
+C:\Users\Ruutj\Documents\Alpha pro\Project-Alpha\Project alpha\obj\Debug\net10.0\Project-Alpha.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ruutj\Documents\Alpha pro\Project-Alpha\Project alpha\obj\Debug\net10.0\Project-Alpha.AssemblyInfoInputs.cache
+C:\Users\Ruutj\Documents\Alpha pro\Project-Alpha\Project alpha\obj\Debug\net10.0\Project-Alpha.AssemblyInfo.cs
+C:\Users\Ruutj\Documents\Alpha pro\Project-Alpha\Project alpha\obj\Debug\net10.0\Project-Alpha.csproj.CoreCompileInputs.cache
+C:\Users\Ruutj\Documents\Alpha pro\Project-Alpha\Project alpha\obj\Debug\net10.0\Project-Alpha.sourcelink.json
+C:\Users\Ruutj\Documents\Alpha pro\Project-Alpha\Project alpha\bin\Debug\net10.0\Project-Alpha.exe
+C:\Users\Ruutj\Documents\Alpha pro\Project-Alpha\Project alpha\bin\Debug\net10.0\Project-Alpha.deps.json
+C:\Users\Ruutj\Documents\Alpha pro\Project-Alpha\Project alpha\bin\Debug\net10.0\Project-Alpha.runtimeconfig.json
+C:\Users\Ruutj\Documents\Alpha pro\Project-Alpha\Project alpha\bin\Debug\net10.0\Project-Alpha.dll
+C:\Users\Ruutj\Documents\Alpha pro\Project-Alpha\Project alpha\bin\Debug\net10.0\Project-Alpha.pdb
+C:\Users\Ruutj\Documents\Alpha pro\Project-Alpha\Project alpha\obj\Debug\net10.0\Project-Alpha.dll
+C:\Users\Ruutj\Documents\Alpha pro\Project-Alpha\Project alpha\obj\Debug\net10.0\refint\Project-Alpha.dll
+C:\Users\Ruutj\Documents\Alpha pro\Project-Alpha\Project alpha\obj\Debug\net10.0\Project-Alpha.pdb
+C:\Users\Ruutj\Documents\Alpha pro\Project-Alpha\Project alpha\obj\Debug\net10.0\Project-Alpha.genruntimeconfig.cache
+C:\Users\Ruutj\Documents\Alpha pro\Project-Alpha\Project alpha\obj\Debug\net10.0\ref\Project-Alpha.dll
