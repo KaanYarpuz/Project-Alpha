@@ -98,10 +98,10 @@ namespace Project_Alpha
             HandleLocationEvents();
 
 
-            if (CurrentLocation.MonsterLivingHere != null)
-            {
-                gevecht();
-            }
+            // if (CurrentLocation.MonsterLivingHere != null)
+            // {
+            //     gevecht();
+            // }
         }  
 
         public void HandleLocationEvents()
@@ -113,11 +113,17 @@ namespace Project_Alpha
                 if (!CompletedQuests.Contains(quest.ID) && !ActiveQuests.Contains(quest.ID))
                 {
 
-                    quest.startquest_or_not();
+                    if (quest.startquest_or_not())
+                    {
+                        ActiveQuests.Add(quest.ID);
+                        Console.WriteLine($"You have started the quest: {quest.TITLE}");
+                        Console.WriteLine($"Task: {quest.TASK}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"You declined the quest: {quest.TITLE}");
+                    }
 
-                    ActiveQuests.Add(quest.ID);
-                    Console.WriteLine($"You have started the quest: {quest.TITLE}");
-                    Console.WriteLine($"Task: {quest.TASK}");
                 }
             }
         }
@@ -163,9 +169,16 @@ namespace Project_Alpha
                 Console.WriteLine("There is nothong to fight here");
                 return;
             }
+
+            if (monster.RequiredQuestID != 0 &&
+                !ActiveQuests.Contains(monster.RequiredQuestID))
+                {
+                    Console.WriteLine("You haven't started the quest for this location yet batty boy!");
+                    return;
+                }
             
             // Fight
-            while (monster.Health >= 0 && this.Health >= 0)
+            while (monster.Health > 0 && this.Health > 0)
             {
 
                 Console.WriteLine("-------------------------------");
@@ -184,17 +197,26 @@ namespace Project_Alpha
                     monster.Health -= this.Equiped.Damage;
                     Console.WriteLine($"You deal {this.Equiped.Damage}");
                     
-                    if (monster.Health >= 1)
+                    if (monster.Health > 0)
                     {
 
-                        this.Health -= monster.Attack;
+                        TakeDamage(monster.Attack);
                         Console.WriteLine($"{monster.Name} dealt {monster.Attack}");
+                    
+                    if (Health <= 0)
+                        {
+                            Console.WriteLine("Game over");
+                            World.gameWin = true;
+                            return;
+                        }
+                    
                     }  
                 }
                 else if (option_f == 2)
                 {
                     // Flee
-                    break;
+                    Console.WriteLine("Lil bitch flees");
+                    return;
                 }
                 else if (option_f == 3)
                 {
@@ -217,20 +239,35 @@ namespace Project_Alpha
                     {
                         Console.WriteLine("Wrong number dumb dumb.");
                     }
-                    }
-                     }
+                }
+            }
+            // monster or player dies
+            if (monster.Health <= 0) 
+            {
+                // monster dead
+                Console.WriteLine($"{monster.Name} is defeated");
+                CompleteQuestIfPossible(monster);
+                // game win
+                if (monster.Name == "giant spider")
+                {
+                    Console.WriteLine("Congratzz you won"); 
+                    World.gameWin = true;
+                }
+            }
+            else if (Health <= 0)
+            {
+                // player dead
+                Console.WriteLine($"Weak twink ass beta ahh, your 6 feet under");
+                World.gameWin = true;
+                return;
+            }
+        }
+        public void TakeDamage(int amount)
+    {
+        Health -= amount;
 
-                    // monster or player dies
-                    if (monster.Health <= 0) 
-                    {
-                        // monster dead
-                        Console.WriteLine($"{monster.Name} is defeated");
-                        CompleteQuestIfPossible(monster);
-                        if (monster.Name == "giant spider") {Console.WriteLine("Congratzz you won"); World.gameWin = true;}
-                    }
-                    else if (Health <= 0)
-                    {
-                        // player dead
-                        Console.WriteLine($"Weak twink ass beta ahh, your 6 feet under");
-                        World.gameWin = true;
-                    }}}}
+        if (Health < 0)
+            Health = 0;
+        }
+    }
+}
