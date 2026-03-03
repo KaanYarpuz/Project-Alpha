@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ruutj\\Documents\\Alpha pro\\Project-Alpha\\Project alpha\\Project-Alpha.csproj": {}
+    "C:\\Users\\leonv\\OneDrive - Hogeschool Rotterdam\\HR2025-2026\\Semester2\\Project-Alpha\\Project alpha\\Project-Alpha.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ruutj\\Documents\\Alpha pro\\Project-Alpha\\Project alpha\\Project-Alpha.csproj": {
+    "C:\\Users\\leonv\\OneDrive - Hogeschool Rotterdam\\HR2025-2026\\Semester2\\Project-Alpha\\Project alpha\\Project-Alpha.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ruutj\\Documents\\Alpha pro\\Project-Alpha\\Project alpha\\Project-Alpha.csproj",
+        "projectUniqueName": "C:\\Users\\leonv\\OneDrive - Hogeschool Rotterdam\\HR2025-2026\\Semester2\\Project-Alpha\\Project alpha\\Project-Alpha.csproj",
         "projectName": "Project-Alpha",
-        "projectPath": "C:\\Users\\Ruutj\\Documents\\Alpha pro\\Project-Alpha\\Project alpha\\Project-Alpha.csproj",
-        "packagesPath": "C:\\Users\\Ruutj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ruutj\\Documents\\Alpha pro\\Project-Alpha\\Project alpha\\obj\\",
+        "projectPath": "C:\\Users\\leonv\\OneDrive - Hogeschool Rotterdam\\HR2025-2026\\Semester2\\Project-Alpha\\Project alpha\\Project-Alpha.csproj",
+        "packagesPath": "C:\\Users\\leonv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leonv\\OneDrive - Hogeschool Rotterdam\\HR2025-2026\\Semester2\\Project-Alpha\\Project alpha\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ruutj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\leonv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
