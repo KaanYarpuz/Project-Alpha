@@ -18,7 +18,7 @@ namespace Project_Alpha
 
             bool Gamewin = false;
 
-            while (!Gamewin)
+            while (!World.gameWin)
             {
                 Console.WriteLine("Choose something batty boy: ");
                 Console.WriteLine("1: See game stats");
@@ -46,7 +46,7 @@ namespace Project_Alpha
                     player.gevecht();
                 }
 
-                else if (option == 4) {Gamewin = true;}
+                else if (option == 4) {World.gameWin = true;}
 
             }
         }

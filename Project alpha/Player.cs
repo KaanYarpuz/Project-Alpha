@@ -170,12 +170,11 @@ namespace Project_Alpha
                 return;
             }
 
-            if (monster.RequiredQuestID != 0 &&
-                !ActiveQuests.Contains(monster.RequiredQuestID))
-                {
-                    Console.WriteLine("You haven't started the quest for this location yet batty boy!");
-                    return;
-                }
+            if (monster.RequiredQuestID != 0 && !ActiveQuests.Contains(monster.RequiredQuestID))
+            {
+                Console.WriteLine("You haven't started the quest for this location yet batty boy!");
+                return;
+            }
             
             // Fight
             while (true)
