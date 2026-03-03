@@ -41,9 +41,10 @@ namespace Project_Alpha
                     player.Move();
                 }
 
-                else if (option == 3) {if (player.CurrentLocation.MonsterLivingHere != null)
-                
-                {player.gevecht();}}
+                else if (option == 3) 
+                {
+                    player.gevecht();
+                }
 
                 else if (option == 4) {Gamewin = true;}
 

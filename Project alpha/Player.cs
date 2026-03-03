@@ -98,10 +98,10 @@ namespace Project_Alpha
             HandleLocationEvents();
 
 
-            if (CurrentLocation.MonsterLivingHere != null)
-            {
-                gevecht();
-            }
+            // if (CurrentLocation.MonsterLivingHere != null)
+            // {
+            //     gevecht();
+            // }
         }  
 
         public void HandleLocationEvents()
@@ -113,11 +113,17 @@ namespace Project_Alpha
                 if (!CompletedQuests.Contains(quest.ID) && !ActiveQuests.Contains(quest.ID))
                 {
 
-                    quest.startquest_or_not();
+                    if (quest.startquest_or_not())
+                    {
+                        ActiveQuests.Add(quest.ID);
+                        Console.WriteLine($"You have started the quest: {quest.TITLE}");
+                        Console.WriteLine($"Task: {quest.TASK}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"You declined the quest: {quest.TITLE}");
+                    }
 
-                    ActiveQuests.Add(quest.ID);
-                    Console.WriteLine($"You have started the quest: {quest.TITLE}");
-                    Console.WriteLine($"Task: {quest.TASK}");
                 }
             }
         }
@@ -163,6 +169,13 @@ namespace Project_Alpha
                 Console.WriteLine("There is nothong to fight here");
                 return;
             }
+
+            if (monster.RequiredQuestID != 0 &&
+                !ActiveQuests.Contains(monster.RequiredQuestID))
+                {
+                    Console.WriteLine("You haven't started the quest for this location yet batty boy!");
+                    return;
+                }
             
             // Fight
             while (monster.Health >= 0 && this.Health >= 0)
