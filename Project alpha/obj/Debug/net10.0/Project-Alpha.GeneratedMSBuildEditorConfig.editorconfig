@@ -10,11 +10,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Project_Alpha
-<<<<<<< HEAD
-build_property.ProjectDir = /Users/kaanyarpuz/Desktop/Project-Alpha/Project alpha/
-=======
-build_property.ProjectDir = C:\Users\leonv\OneDrive - Hogeschool Rotterdam\HR2025-2026\Semester2\Project-Alpha\Project alpha\
->>>>>>> 21fbc376fe626eec151875b1ba98ef8174635ea6
+build_property.ProjectDir = C:\Users\Ruutj\Documents\Alpha pro\Project-Alpha\Project alpha\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
