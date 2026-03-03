@@ -207,7 +207,8 @@ namespace Project_Alpha
                 else if (option_f == 2)
                 {
                     // Flee
-                    break;
+                    Console.WriteLine("Lil bitch flees");
+                    return;
                 }
                 else if (option_f == 3)
                 {
@@ -230,20 +231,28 @@ namespace Project_Alpha
                     {
                         Console.WriteLine("Wrong number dumb dumb.");
                     }
-                    }
-                     }
-
-                    // monster or player dies
-                    if (monster.Health <= 0) 
-                    {
-                        // monster dead
-                        Console.WriteLine($"{monster.Name} is defeated");
-                        CompleteQuestIfPossible(monster);
-                        if (monster.Name == "giant spider") {Console.WriteLine("Congratzz you won"); World.gameWin = true;}
-                    }
-                    else if (Health <= 0)
-                    {
-                        // player dead
-                        Console.WriteLine($"Weak twink ass beta ahh, your 6 feet under");
-                        World.gameWin = true;
-                    }}}}
+                }
+            }
+            // monster or player dies
+            if (monster.Health <= 0) 
+            {
+                // monster dead
+                Console.WriteLine($"{monster.Name} is defeated");
+                CompleteQuestIfPossible(monster);
+                // game win
+                if (monster.Name == "giant spider")
+                {
+                    Console.WriteLine("Congratzz you won"); 
+                    World.gameWin = true;
+                }
+            }
+            else if (Health <= 0)
+            {
+                // player dead
+                Console.WriteLine($"Weak twink ass beta ahh, your 6 feet under");
+                World.gameWin = true;
+                return;
+            }
+        }
+    }
+}

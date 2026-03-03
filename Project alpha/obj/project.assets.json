@@ -8,19 +8,38 @@
     "net10.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "/Users/kaanyarpuz/.nuget/packages/": {}
+=======
+    "C:\\Users\\leonv\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+>>>>>>> 21fbc376fe626eec151875b1ba98ef8174635ea6
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "/Users/kaanyarpuz/Desktop/Project-Alpha/Project alpha/Project-Alpha.csproj",
       "projectName": "Project-Alpha",
       "projectPath": "/Users/kaanyarpuz/Desktop/Project-Alpha/Project alpha/Project-Alpha.csproj",
       "packagesPath": "/Users/kaanyarpuz/.nuget/packages/",
       "outputPath": "/Users/kaanyarpuz/Desktop/Project-Alpha/Project alpha/obj/",
+=======
+      "projectUniqueName": "C:\\Users\\leonv\\OneDrive - Hogeschool Rotterdam\\HR2025-2026\\Semester2\\Project-Alpha\\Project alpha\\Project-Alpha.csproj",
+      "projectName": "Project-Alpha",
+      "projectPath": "C:\\Users\\leonv\\OneDrive - Hogeschool Rotterdam\\HR2025-2026\\Semester2\\Project-Alpha\\Project alpha\\Project-Alpha.csproj",
+      "packagesPath": "C:\\Users\\leonv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leonv\\OneDrive - Hogeschool Rotterdam\\HR2025-2026\\Semester2\\Project-Alpha\\Project alpha\\obj\\",
+>>>>>>> 21fbc376fe626eec151875b1ba98ef8174635ea6
       "projectStyle": "PackageReference",
       "configFilePaths": [
+<<<<<<< HEAD
         "/Users/kaanyarpuz/.nuget/NuGet/NuGet.Config"
+=======
+        "C:\\Users\\leonv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> 21fbc376fe626eec151875b1ba98ef8174635ea6
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -65,7 +84,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json",
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+>>>>>>> 21fbc376fe626eec151875b1ba98ef8174635ea6
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
