@@ -40,13 +40,10 @@ namespace Project_Alpha
             
                     player.Move();
                 }
+
                 else if (option == 3) 
                 {
-                    if (player.CurrentLocation.MonsterLivingHere != null)
-                    {
-                        player.gevecht();
-                    }
-                    else {Console.WriteLine("There are no monsters here, besides yourself :<");}
+                    player.gevecht();
                 }
 
                 else if (option == 4) {Gamewin = true;}

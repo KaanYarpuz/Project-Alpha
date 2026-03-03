@@ -76,13 +76,13 @@ public static class World
 
     public static void PopulateMonsters()
     {
-        Monster rat = new Monster(MONSTER_ID_RAT, "devious trio of rats", 3, 9);
+        Monster rat = new Monster(MONSTER_ID_RAT, "devious trio of rats", 3, 9, QUEST_ID_CLEAR_ALCHEMIST_GARDEN);
 
 
-        Monster snake = new Monster(MONSTER_ID_SNAKE, "snake", 10, 7);
+        Monster snake = new Monster(MONSTER_ID_SNAKE, "snake", 10, 7, QUEST_ID_CLEAR_FARMERS_FIELD);
 
 
-        Monster giantSpider = new Monster(MONSTER_ID_GIANT_SPIDER, "giant spider", 3, 10);
+        Monster giantSpider = new Monster(MONSTER_ID_GIANT_SPIDER, "giant spider", 3, 10, QUEST_ID_COLLECT_SPIDER_SILK);
 
 
         Monsters.Add(rat);
